@@ -139,3 +139,77 @@ a {
     margin-top: 50px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 480px) {
+  body {
+    padding: 20px 15px; /* Reduz muito o padding lateral */
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    margin: 15px 0;
+  }
+  
+  .container-imagem img {
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid black;
+  }
+  
+  .container-tempo {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .container-tempo li {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .parágrafo {
+    padding: 15px 20px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    width: 100%;
+  }
+  
+  .container-ingredientes li,
+  .container-utensilios li {
+    flex-direction: column; /* Empilha imagem e texto */
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .container-ingredientes li img,
+  .container-utensilios li img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .container-preparo {
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  
+  .container-preparo li {
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  
+  a {
+    padding: 15px 30px;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
